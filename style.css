@@ -1,16 +1,13 @@
-/* Google Fonts жүктеу - Montserrat Alternates қазақ тіліндегі мәтінге өте қолайлы */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Google Fonts - Montserrat қазақ тіліне өте қолайлы */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;600;700;800&display=swap');
 
-/* Негізгі айнымалылар мен баптаулар */
 :root {
-    --nav-bg: rgba(10, 25, 41, 0.95);      /* Навигацияның қою көк фоны */
-    --content-bg: rgba(26, 32, 44, 0.9);   /* Контент блогының фоны */
-    --card-width: 280px;
-    --card-height: 200px;
-    --accent: #ffcc00;                     /* Алтын түсті акцент (Алаш рухы) */
-    --accent-dark: #b8860b;                /* Қою алтын / қоңыр */
-    --text-white: #ffffff;
-    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    --nav-bg: rgba(2, 6, 23, 0.95);
+    --content-bg: rgba(15, 23, 42, 0.8);
+    --accent: #00ff88;         /* Неонды жасыл */
+    --accent-dark: #008f4c;    /* Қою жасыл */
+    --text-white: #f8fafc;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -25,198 +22,165 @@ html {
 }
 
 body {
-    background: #0a0a0a;
+    background: #020617;
     color: var(--text-white);
     overflow-x: hidden;
     line-height: 1.6;
 }
 
-/* Навигациялық мәзір стилі */
+/* Навигация */
 nav#mainNav {
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     background: var(--nav-bg);
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
     z-index: 1000;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
     border-bottom: 2px solid var(--accent-dark);
 }
 
 nav#mainNav a {
     color: var(--text-white);
     text-decoration: none;
-    padding: 22px 28px;
+    padding: 20px 25px;
     display: block;
     transition: var(--transition);
     font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
 }
 
 nav#mainNav a:hover,
 nav#mainNav a.active {
     color: var(--accent);
-    background: rgba(255, 204, 0, 0.1);
+    background: rgba(0, 255, 136, 0.05);
 }
 
 /* Хедер (Басты бет) */
 header#home {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=2000') center/cover no-repeat;
-    position: relative;
+    background: linear-gradient(rgba(2, 6, 23, 0.8), rgba(2, 6, 23, 0.8)), 
+                url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2000') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-header .overlay {
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.8) 100%);
+    position: relative;
 }
 
 .header-content {
-    position: relative;
     z-index: 2;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 .header-content h1 {
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-size: clamp(2rem, 6vw, 4rem);
     margin-bottom: 20px;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     color: var(--accent);
-    text-shadow: 3px 3px 15px rgba(0,0,0,0.8);
+    text-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
 }
 
 .header-content p {
-    font-size: 1.4rem;
-    font-weight: 400;
+    font-size: 1.2rem;
     max-width: 800px;
     margin: 0 auto;
-    opacity: 0.95;
-    color: #e0e0e0;
+    opacity: 0.9;
 }
 
-/* Секциялардың ортақ стилі */
+/* Секциялар */
 section {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 120px 20px;
-    position: relative;
-    background-attachment: fixed; /* Параллакс эффектісі */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
-/* Секциялардың фондық суреттеріне арналған кластар */
-/* Секциялардың фондық суреттерін Үндістан тақырыбына икемдеу */
-.bg1 { background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1524492707947-503a5be63326?q=80&w=2000') center/cover; } /* Тадж-Махал немесе Дели */
-.bg2 { background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1532375810709-75b1da00537c?q=80&w=2000') center/cover; } /* Үндістан егіншілігі */
-.bg3 { background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=2000') center/cover; } /* Кашмир таулары */
-.bg4 { background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2000') center/cover; } /* Қазіргі қала / технология */
+/* Секция фондары (технологиялық стильде) */
+.bg1 { background-image: linear-gradient(rgba(2, 6, 23, 0.9), rgba(2, 6, 23, 0.9)), url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=2000'); }
+.bg2 { background-image: linear-gradient(rgba(2, 6, 23, 0.9), rgba(2, 6, 23, 0.9)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000'); }
+.bg3 { background-image: linear-gradient(rgba(2, 6, 23, 0.9), rgba(2, 6, 23, 0.9)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2000'); }
+.bg4 { background-image: linear-gradient(rgba(2, 6, 23, 0.9), rgba(2, 6, 23, 0.9)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2000'); }
 
-/* Контент блогының контейнері */
 .content {
-    position: relative;
-    z-index: 2;
     background: var(--content-bg);
-    padding: 60px;
-    border-radius: 24px;
+    padding: 50px;
+    border-radius: 25px;
     max-width: 1000px;
-    width: 95%;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 204, 0, 0.2);
+    width: 100%;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(0, 255, 136, 0.1);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 
 section h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 30px;
     color: var(--accent);
     text-transform: uppercase;
-    position: relative;
-    display: inline-block;
-}
-
-section h2::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: var(--accent);
-    margin: 10px auto 0;
 }
 
 section p {
-    font-size: 1.15rem;
-    margin-bottom: 35px;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
     text-align: justify;
-    color: #f0f0f0;
+    color: #cbd5e1;
 }
 
-/* Карточкалар жүйесі */
+/* Карточкалар */
 .cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 35px;
-    margin-top: 50px;
+    gap: 30px;
+    margin-top: 40px;
 }
 
 .card {
-    width: var(--card-width);
-    height: var(--card-height);
+    width: 280px;
+    height: 180px;
     border-radius: 20px;
-    position: relative;
-    overflow: hidden;
-    /* Карточкалардың дефолттық градиенті (егер сурет жүктелмесе) */
-    background: linear-gradient(135deg, #0f172a, #b8860b);
-    background-size: cover;
-    background-position: center;
-    transition: var(--transition);
-    opacity: 0;
-    transform: translateY(60px);
+    background: linear-gradient(135deg, #0f172a, #1e293b);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    padding: 20px;
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    transition: var(--transition);
+    opacity: 0;
+    transform: translateY(40px);
 }
 
-/* Анимация қосылғандағы класс (JS арқылы басқарылады) */
 .card.show {
     opacity: 1;
     transform: translateY(0);
 }
 
 .card:hover {
-    transform: scale(1.08) translateY(-15px);
-    box-shadow: 0 20px 40px rgba(255, 204, 0, 0.3);
+    transform: translateY(-10px) scale(1.05);
     border-color: var(--accent);
+    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
 }
 
 .card span {
-    font-size: 1.4rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.9);
-    padding: 15px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-white);
     text-align: center;
-    line-height: 1.2;
 }
 
-/* Кесте дизайны */
+/* Кесте */
 .table-container {
-    margin-top: 40px;
+    margin-top: 30px;
     border-radius: 15px;
     overflow: hidden;
     border: 1px solid var(--accent-dark);
@@ -225,96 +189,37 @@ section p {
 table {
     width: 100%;
     border-collapse: collapse;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(2, 6, 23, 0.5);
 }
 
 table th {
     background: var(--accent-dark);
     color: #000;
-    padding: 18px;
+    padding: 15px;
     text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 0.9rem;
 }
 
 table td {
     padding: 15px;
-    border-bottom: 1px solid rgba(255, 204, 0, 0.1);
-    font-size: 1.1rem;
-    color: #fff;
-}
-
-table tr:last-child td {
-    border-bottom: none;
-}
-
-table tr:hover {
-    background: rgba(255, 204, 0, 0.05);
-}
-
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-    width: 12px;
-}
-
-::-webkit-scrollbar-track {
-    background: #050505;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(var(--accent-dark), var(--accent));
-    border-radius: 6px;
-    border: 3px solid #050505;
+    border-bottom: 1px solid rgba(0, 255, 136, 0.1);
+    color: #e2e8f0;
 }
 
 /* Футер */
 footer {
-    background: #050505;
-    color: var(--accent);
+    background: #020617;
+    padding: 40px;
     text-align: center;
-    padding: 40px 20px;
-    border-top: 2px solid var(--accent-dark);
-    font-weight: 500;
-    letter-spacing: 1px;
+    border-top: 1px solid var(--accent-dark);
+    color: var(--accent);
+    font-weight: 600;
 }
 
-/* Адаптивті дизайн (Мобильді құрылғылар үшін) */
-@media (max-width: 1024px) {
-    .content {
-        padding: 40px;
-    }
-}
-
+/* Адаптивтілік */
 @media (max-width: 768px) {
-    nav#mainNav {
-        flex-wrap: wrap;
-    }
-    nav#mainNav a {
-        padding: 15px 12px;
-        font-size: 0.7rem;
-    }
-    header#home {
-        height: 80vh;
-    }
-    .header-content h1 {
-        font-size: 2.2rem;
-    }
-    section h2 {
-        font-size: 1.8rem;
-    }
-    .card {
-        width: 100%; /* Мобильді телефонда карточкалар толық енді алады */
-        height: 160px;
-    }
-}
-
-@media (max-width: 480px) {
-    .content {
-        padding: 25px 15px;
-        border-radius: 0;
-    }
-    section p {
-        font-size: 1rem;
-        text-align: left;
-    }
+    nav#mainNav { flex-wrap: wrap; }
+    nav#mainNav a { padding: 12px 10px; font-size: 0.65rem; }
+    .content { padding: 30px 20px; }
+    .card { width: 100%; height: 140px; }
 }
