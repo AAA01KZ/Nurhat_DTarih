@@ -1,11 +1,11 @@
-/* Google Fonts - Montserrat қазақ тіліне өте қолайлы */
+/* <!-- Будете копировать, напишите мне pls --> */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;600;700;800&display=swap');
 
 :root {
     --nav-bg: rgba(2, 6, 23, 0.95);
     --content-bg: rgba(15, 23, 42, 0.8);
-    --accent: #00ff88;         /* Неонды жасыл */
-    --accent-dark: #008f4c;    /* Қою жасыл */
+    --accent: #00ff88;         /* <!-- Будете копировать, напишите мне pls --> */
+    --accent-dark: #008f4c;    /* <!-- Будете копировать, напишите мне pls --> */
     --text-white: #f8fafc;
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -28,7 +28,7 @@ body {
     line-height: 1.6;
 }
 
-/* Навигация */
+/* <!-- Будете копировать, напишите мне pls --> */
 nav#mainNav {
     position: fixed;
     top: 0;
@@ -59,7 +59,7 @@ nav#mainNav a.active {
     background: rgba(0, 255, 136, 0.05);
 }
 
-/* Хедер (Басты бет) */
+/* <!-- Будете копировать, напишите мне pls --><!-- Будете копировать, напишите мне pls --> */
 header#home {
     height: 100vh;
     background: linear-gradient(rgba(2, 6, 23, 0.8), rgba(2, 6, 23, 0.8)), 
@@ -92,7 +92,7 @@ header#home {
     opacity: 0.9;
 }
 
-/* Секциялар */
+/* <!-- Будете копировать, напишите мне pls --> */
 section {
     min-height: 100vh;
     display: flex;
@@ -104,7 +104,7 @@ section {
     background-position: center;
 }
 
-/* Секция фондары (технологиялық стильде) */
+/* <!-- Будете копировать, напишите мне pls --> */
 .bg1 { background-image: linear-gradient(rgba(2, 6, 23, 0.9), rgba(2, 6, 23, 0.9)), url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=2000'); }
 .bg2 { background-image: linear-gradient(rgba(2, 6, 23, 0.9), rgba(2, 6, 23, 0.9)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000'); }
 .bg3 { background-image: linear-gradient(rgba(2, 6, 23, 0.9), rgba(2, 6, 23, 0.9)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2000'); }
@@ -136,7 +136,7 @@ section p {
     color: #cbd5e1;
 }
 
-/* Карточкалар */
+/* <!-- Будете копировать, напишите мне pls --> */
 .cards {
     display: flex;
     justify-content: center;
@@ -178,7 +178,7 @@ section p {
     text-align: center;
 }
 
-/* Кесте */
+/* <!-- Будете копировать, напишите мне pls --> */
 .table-container {
     margin-top: 30px;
     border-radius: 15px;
@@ -206,7 +206,7 @@ table td {
     color: #e2e8f0;
 }
 
-/* Футер */
+/* <!-- Будете копировать, напишите мне pls --> */
 footer {
     background: #020617;
     padding: 40px;
@@ -216,7 +216,7 @@ footer {
     font-weight: 600;
 }
 
-/* Адаптивтілік */
+/* <!-- Будете копировать, напишите мне pls --> */
 @media (max-width: 768px) {
     nav#mainNav { flex-wrap: wrap; }
     nav#mainNav a { padding: 12px 10px; font-size: 0.65rem; }
