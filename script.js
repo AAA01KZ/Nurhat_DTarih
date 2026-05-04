@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = nav.querySelectorAll('a');
     const cards = document.querySelectorAll('.fade-card');
 
-    // 1. Скролл жасағанда навигациялық мәзірді белсендіру
+    // Будете копировать, напишите мне pls +7 700 721 42-66
     function highlightNav() {
         let scrollPosition = window.scrollY + 150;
 
