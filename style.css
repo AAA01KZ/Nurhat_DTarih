@@ -1,10 +1,10 @@
-/* <!-- Будете копировать, напишите мне pls --> */
+/*  Будете копировать, напишите мне pls +7 700 721 42-66 */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;600;700;800&display=swap');
 
 :root {
     --nav-bg: rgba(2, 6, 23, 0.95);
     --content-bg: rgba(15, 23, 42, 0.8);
-    --accent: #00ff88;         /* <!-- Будете копировать, напишите мне pls --> */
+    --accent: #00ff88;         /*  Будете копировать, напишите мне pls +7 700 721 42-66 Будете копировать, напишите мне pls +7 700 721 42-66 */
     --accent-dark: #008f4c;    /* <!-- Будете копировать, напишите мне pls --> */
     --text-white: #f8fafc;
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -28,7 +28,7 @@ body {
     line-height: 1.6;
 }
 
-/* <!-- Будете копировать, напишите мне pls --> */
+/* <!-- Будете копировать, напишите мне pls -->  Будете копировать, напишите мне pls +7 700 721 42-66 */
 nav#mainNav {
     position: fixed;
     top: 0;
@@ -59,7 +59,7 @@ nav#mainNav a.active {
     background: rgba(0, 255, 136, 0.05);
 }
 
-/* <!-- Будете копировать, напишите мне pls --><!-- Будете копировать, напишите мне pls --> */
+/*  Будете копировать, напишите мне pls +7 700 721 42-66 Будете копировать, напишите мне pls +7 700 721 42-66<!-- Будете копировать, напишите мне pls --> */
 header#home {
     height: 100vh;
     background: linear-gradient(rgba(2, 6, 23, 0.8), rgba(2, 6, 23, 0.8)), 
@@ -92,7 +92,7 @@ header#home {
     opacity: 0.9;
 }
 
-/* <!-- Будете копировать, напишите мне pls --> */
+/*  Будете копировать, напишите мне pls +7 700 721 42-66 */
 section {
     min-height: 100vh;
     display: flex;
@@ -215,7 +215,7 @@ footer {
     font-weight: 600;
 }
 
-/* <!-- Будете копировать, напишите мне pls --> */
+/*  Будете копировать, напишите мне pls +7 700 721 42-66 */
 @media (max-width: 768px) {
     nav#mainNav { flex-wrap: wrap; }
     nav#mainNav a { padding: 12px 10px; font-size: 0.65rem; }
